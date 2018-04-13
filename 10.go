@@ -36,6 +36,10 @@ func main() {
 }
 
 func isMatch(s string, p string) bool {
+	/*
+		編輯器： https://regex101.com/
+		解釋器： https://regexper.com/
+	*/
 	b, e := regexp.MatchString("^"+p+"$", s)
 	if e != nil {
 		return false
